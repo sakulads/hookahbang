@@ -130,7 +130,7 @@ async function createBlogPostArchive({ posts, gatsbyUtilities }) {
  * So see https://www.gatsbyjs.com/docs/node-apis/#createPages for more info!
  */
 async function getPosts({ graphql, reporter }) {
-  const graphqlResult = await graphql(/* GraphQL */ `
+  const graphqlResult = await graphql(`
     query WpPosts {
       # Query all WordPress blog posts sorted by date
       allWpPost(sort: { fields: [date], order: DESC }) {
