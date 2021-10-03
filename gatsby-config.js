@@ -26,7 +26,7 @@ module.exports = {
       resolve: `gatsby-source-wordpress`,
       options: {
         // the only required plugin option for WordPress is the GraphQL url.
-        url: `https://wpgatsbydemo.wpengine.com/graphql`,
+        url: `http://localhost:10003/graphql`,
         develop: {
           hardCacheMediaFiles: true,
         },
